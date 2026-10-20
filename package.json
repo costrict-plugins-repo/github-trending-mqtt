@@ -1,0 +1,40 @@
+{
+  "name": "claude-code-mqtt",
+  "version": "0.4.0",
+  "description": "MQTT channel plugin for Claude Code — cross-session messaging, Home Assistant integration, and IoT bridge",
+  "type": "module",
+  "bin": "./server.ts",
+  "scripts": {
+    "start": "bun run server.ts",
+    "dev": "bun run --watch server.ts",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit"
+  },
+  "author": {
+    "name": "Matt Stein",
+    "url": "https://github.com/mattstein111"
+  },
+  "keywords": ["mqtt", "claude-code", "mcp", "channel", "iot", "home-assistant", "pub-sub"],
+  "homepage": "https://github.com/mattstein111/claude-code-mqtt#readme",
+  "bugs": {
+    "url": "https://github.com/mattstein111/claude-code-mqtt/issues"
+  },
+  "engines": {
+    "bun": ">=1.0.0"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "mqtt": "^5.15.1"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.2.0",
+    "typescript": "^5.7.0",
+    "typescript-eslint": "^8.0.0",
+    "eslint": "^9.0.0"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mattstein111/claude-code-mqtt"
+  }
+}
